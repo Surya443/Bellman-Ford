@@ -11,11 +11,14 @@ Brute-Force Approach: Calculates shortest paths by iterating through all edges.
 ### Algebraic Approach: 
 Utilizes matrix operations to compute shortest paths.
 
-'''
+
+### Directory:
+
+```
 
 |-- graph.py           # Contains the Graph class with methods to add edges and represent the graph
 |-- Bellmanford.py     # Contains the Bellman-Ford implementations (Brute-Force and Algebraic)
 |-- main.py            # Main script to run the Bellman-Ford algorithm and performance comparison
 |-- README.md          # This readme file
 
-'''
+```

@@ -8,7 +8,7 @@ INF = float('inf')
 def adjacency_matrix(graph):
     """Generate an adjacency matrix from the given directed graph."""
     
-    # Get all nodes and sort them to maintain consistent ordering
+
     nodes = sorted(graph.graph.keys())
     node_count = len(nodes)       
     node_index = {node: i for i, node in enumerate(nodes)}

@@ -5,13 +5,12 @@ class Graph:
         self.directed = directed  
         self.weighted = weighted  
 
-    def add_node(self, node):
-        """Add a node """
+    def add_node(self, node):        
         if node not in self.graph:
             self.graph[node] = []  
 
     def add_edge(self, node1, node2, weight=None):
-        """Add an edge to the graph between node1 and node2."""
+        
         if node1 not in self.graph:
             self.add_node(node1)
         if node2 not in self.graph:
@@ -31,8 +30,7 @@ class Graph:
             if not self.directed:
                 self.graph[node2].append(node1)
                 
-    def get_all_edges(self):
-        """Helper function to retrieve all edges in the graph."""
+    def get_all_edges(self):        
         edges = []
         for u in self.graph:
             for v in self.graph[u]:
@@ -45,7 +43,6 @@ class Graph:
         return edges
 
     def display(self):
-        """Display the graph's adjacency list"""
         for node in self.graph:
             print(f"{node}: {self.graph[node]}")
 
